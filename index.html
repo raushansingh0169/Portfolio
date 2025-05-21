@@ -638,53 +638,49 @@
                     </div>
                 </div>
 
-                <form action="https://api.web3forms.com/submit" method="POST" class="contact__form grid">
-                    <input type="hidden" name="access_key" value="c6cb109e-f950-4c56-9a80-e3de25b8701d">
-                    <div class="contact__inputs grid">
-                        <div class="contact__content">
-                            <label for="" class="contact__label">Name</label>
-                            <input type="text" name="name" class="contact__input">
-                        </div>
+               <form action="https://api.web3forms.com/submit" method="POST" class="contact__form grid">
+  <!-- Required hidden fields -->
+  <input type="hidden" name="access_key" value="c6cb109e-f950-4c56-9a80-e3de25b8701d">
+  <input type="hidden" name="subject" value="New Contact Form Submission">
+  <input type="hidden" name="from_name" value="My Website Contact Form">
+  <input type="hidden" name="redirect" value="https://web3forms.com/success">
 
-                        <div class="contact__content">
-                            <label for="" class="contact__label">E-mail</label>
-                            <input type="email" name="email" class="contact__input">
-                        </div>
-                    </div>
+  <!-- Contact Inputs -->
+  <div class="contact__inputs grid">
+    <div class="contact__content">
+      <label for="name" class="contact__label">Name</label>
+      <input type="text" id="name" name="name" class="contact__input" required>
+    </div>
 
-                    <div class="contact__content">
-                        <label for="" class="contact__label">Subject</label>
-                        <input type="text" class="contact__input">
-                    </div>
+    <div class="contact__content">
+      <label for="email" class="contact__label">E-mail</label>
+      <input type="email" id="email" name="email" class="contact__input" required>
+    </div>
+  </div>
 
-                    <div class="contact__content">
-                        <label for="" class="contact__label">Description</label>
-                        <textarea name="message" id="" cols="0" rows="7" class="contact__input"></textarea>
-                    </div>
+  <div class="contact__content">
+    <label for="subjectInput" class="contact__label">Subject</label>
+    <input type="text" id="subjectInput" name="subject" class="contact__input" required>
+  </div>
 
-                    <div>
-                        <!-- <button type="submit">
-                            Submit
-                            <i class="uil uil-message button__icon"></i>
-                        </button> -->
-                        <button class="button-74" role="button" type="submit">Submit
-                            <i class="uil uil-message button__icon"></i>
-                        </button>
-                    </div>
-                </form>
+  <div class="contact__content">
+    <label for="message" class="contact__label">Description</label>
+    <textarea name="message" id="message" cols="0" rows="7" class="contact__input" required></textarea>
+  </div>
 
-            </div>
-
-        </section>
-    </main>
-
+  <div>
+    <button class="button-74" role="button" type="submit">Submit
+      <i class="uil uil-message button__icon"></i>
+    </button>
+  </div>
+</form>
     <!--==================== FOOTER ====================-->
     <footer class="footer">
 
         <div class="footer__bg">
             <div class="footer__container container grid">
                 <div>
-                    <h1 class="footer__title">Karan Singh</h1>
+                    <h1 class="footer__title">Raushan Singh</h1>
                     <span class="footer__subtitle">MIS Executive</span>
                 </div>
 
@@ -704,7 +700,7 @@
                     <a href="" target="_blank" class="footer__social">
                         <i class="uil uil-facebook"></i>
                     </a>
-                    <a href="https://www.instagram.com/karan_singh_alone_0001/?hl=en" target="_blank"
+                    <a href="https://www.instagram.com/ro_shan_singh_001//?hl=en" target="_blank"
                         class="footer__social">
                         <i class="uil uil-instagram"></i>
                     </a>
@@ -714,8 +710,8 @@
                     </a>
                 </div>
             </div>
-            <p class="footer__copy">&#169; Karan Singh. All rights reserved.</p>
-        </div>
+            <p class="footer__copy">&#169;Raushan Singh. All rights reserved.</p>
+        </div
     </footer>
 
     <!--==================== SCROLL TOP ====================-->
